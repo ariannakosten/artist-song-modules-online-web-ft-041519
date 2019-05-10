@@ -8,7 +8,7 @@ module Findable
   end
  
   def all
-    @artists
+    @artists.self
   end 
   
   def find_by_name(name)
