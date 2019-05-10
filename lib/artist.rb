@@ -16,7 +16,7 @@ class Artist
     @songs = []
   end
 
-
+#super will tell that method to look up its behavior in the method of the same name in the parent, or super, class. A method that includes the super keyword will execute any code placed inside the super class' method of the same name, and then execute any code inside the child class' method.
 
   def self.all
     @@artists
