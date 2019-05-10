@@ -1,5 +1,16 @@
 module Findable
-    def find_by_name(name)
+   @@artists = []
+ 
+  attr_accessor :name
+ 
+  def initialize(name)
+    @name = name
+  end
+ 
+  def self.all
+    @@artists
+    
+  end def find_by_name(name)
     @@artists.detect{|a| a.name == name}
 end
 
