@@ -4,6 +4,7 @@ module Findable
    self.detect{|a| a.name == name}
   end
 end
+end
 
 
 #This module should define the method, find_by_name. This method will be used as a class method. 
