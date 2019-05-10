@@ -1,5 +1,5 @@
 module Findable
-   @@artists = []
+   @artists = []
  
   attr_accessor :name
  
@@ -7,11 +7,11 @@ module Findable
     @name = name
   end
  
-  def self.all
-    @@artists
+  def all
+    @artists
     
   end def find_by_name(name)
-    @@artists.detect{|a| a.name == name}
+    @artists.detect{|a| a.name == name}
 end
 
 
